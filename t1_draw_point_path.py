@@ -21,7 +21,8 @@ for i in range(hosts_n):
 
 print(hosts_x)
 print(hosts_y)
-    
+
+#Drawing the points
 for i in range(hosts_n):
     points.plot([hosts_x], [hosts_y], 'ro') #Plot each hosts in their coordinates
     print(i)
@@ -36,6 +37,7 @@ axes.set_xlim([-0.8,col])
 axes.set_ylim([-0.8,row])
 points.show()
 
+#Drawing the path between the points
 fig, ax = plt.subplots()
 Path = mpath.Path
 path_data = []
